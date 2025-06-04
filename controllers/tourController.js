@@ -33,7 +33,7 @@ exports.uploadTourImages = upload.fields([
 // exports.uploadUserPhoto = upload.single('images');
 
 exports.resizeTourImages = catchAsync(async (req, res, next) => {
-  console.log(req.files);
+  // console.log(req.files);
 
   if (!req.files.imageCover || !req.files.images) return next();
 
@@ -62,7 +62,7 @@ exports.resizeTourImages = catchAsync(async (req, res, next) => {
     }),
   );
 
-  console.log(req.body);
+  // console.log(req.body);
   next();
 });
 
