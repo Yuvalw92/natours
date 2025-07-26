@@ -28,7 +28,7 @@ app.set('views', path.join(__dirname, 'views'));
 // Implement CORS
 app.use(cors());
 
-// Access to a specific fornt-end url
+// Access to a specific front-end url
 // app.use(
 //   cors({
 //     origin: 'https://natours.com',
